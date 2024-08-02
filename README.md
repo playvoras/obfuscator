@@ -1,12 +1,12 @@
 ```
+local code = [[
+  print("Hello World!")
+]]
 local obfuscator = loadstring(game:HttpGet("https://raw.githubusercontent.com/playvoras/obfuscator/main/source.lua"))()
 
 obfuscator(
- [===[
-  --// Paste your source here
-  print("Hello World!")
- ]===],
- "Moonsec_V3", --// random var lol
- "Protected" --// WaterMark
+  code,   -- source code
+  "Moonsec_V3", -- Random var lol
+  "Protected"   -- WaterMark
 )
 ```
