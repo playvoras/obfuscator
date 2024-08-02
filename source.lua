@@ -16,9 +16,9 @@ function obfuscate(source, VarName, WaterMark)
     local ticks = tick()
 
     if typeof(WaterMark) == "string" and WaterMark ~= nil then
-        WM = "    ""
+        WM = ""
     else
-        WM = "    ""
+        WM = ""
     end
 
     WM = ""
