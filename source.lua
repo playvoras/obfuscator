@@ -16,12 +16,12 @@ function obfuscate(source, VarName, WaterMark)
     local ticks = tick()
 
     if typeof(WaterMark) == "string" and WaterMark ~= nil then
-        WM = "    " .. tostring(WaterMark) .. " | Secure by GhostyDuckyy#7698"
+        WM = "    ""
     else
-        WM = "    " .. "WaterMark" .. " | Secure by GhostyDuckyy#7698"
+        WM = "    ""
     end
 
-    WM = "--[[" .. "\n" .. tostring(WM) .. "\n" .. "]]--" .. "\n\n"
+    WM = ""
 
     local random_ = function(length)
         local letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
