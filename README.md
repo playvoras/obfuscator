@@ -1,5 +1,5 @@
 ```
-local obfuscator = loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostDuckyy/RBXLuaObfuscator/main/source.lua"))()
+local obfuscator = loadstring(game:HttpGet("https://raw.githubusercontent.com/playvoras/obfuscator/main/source.lua"))()
 
 obfuscator(
  [===[
