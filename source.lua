@@ -189,8 +189,5 @@ function obfuscate(source, VarName, WaterMark)
 end
 
 --// Module
-return function(source, CustomVarName, WaterMark)
-	task.spawn(function()
-		obfuscate(source, CustomVarName, WaterMark)
-	end)
-end
+local sources =  [[loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()]] -- example
+obfuscate(sources, CustomVarName, WaterMark)
