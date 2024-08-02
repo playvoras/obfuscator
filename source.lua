@@ -128,7 +128,19 @@ function obfuscate(source, VarName, WaterMark)
 		[[repeat print("Repeating...") until false]],
 		[[function foo() return "bar" end; foo()]],
 		[[local t = {1, 2, 3}; table.insert(t, 4)]],
+		[[local sum = 0; for _, v in ipairs({1, 2, 3, 4}) do sum = sum + v end; print(sum)]],
+		[[local a, b = 1, 2; a, b = b, a; print(a, b)]],
+		[[local tbl = {a = 1, b = 2}; tbl.c = 3; for k, v in pairs(tbl) do print(k, v) end]],
+		[[local function square(x) return x * x end; print(square(5))]],
+		[[local str = "Hello World"; print(str:upper())]],
+		[[local num = 10; print(num % 3)]],
+		[[local tbl = {name = "Lua", version = 5.4}; print(tbl.name .. " " .. tbl.version)]],
+		[[local function greet(name) return "Hello, " .. name end; print(greet("Alice"))]],
+		[[local x = 1; while x <= 5 do print(x); x = x + 1 end]],
+		[[local t = {a = 1, b = 2, c = 3}; for k, v in next, t do print(k, v) end]],
+		[[print("not correct code")]]
 	}
+
 
 	local random_code_obfuscated = [[local ]] .. Random_Variable.RandomCode1 .. [[ = "]] .. base64.encode(random_code_snippets[math.random(1, #random_code_snippets)]) .. [["; ]]
 	random_code_obfuscated = random_code_obfuscated .. [[local ]] .. Random_Variable.RandomCode2 .. [[ = "]] .. base64.encode(random_code_snippets[math.random(1, #random_code_snippets)]) .. [["; ]]
@@ -182,4 +194,3 @@ return function(source, CustomVarName, WaterMark)
 		obfuscate(source, CustomVarName, WaterMark)
 	end)
 end
-
