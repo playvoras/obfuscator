@@ -6,7 +6,7 @@ obfuscator(
   --// Paste your source here
   print("Hello World!")
  ]===],
- "Taurus_", --// Custom Variable
+ "Moonsec_V3", --// random var lol
  "Protected" --// WaterMark
 )
 ```
