@@ -10,6 +10,3 @@ obfuscator(
  "Protected" --// WaterMark
 )
 ```
-# obfuscator update logs
-```
--- now doesnt show the variable or something if the input code errors
