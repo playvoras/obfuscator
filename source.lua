@@ -136,11 +136,11 @@ function obfuscate(source, VarName, WaterMark)
 		[[local x = 1; while x <= 5 do print(x); x = x + 1 end]],
 		[[local t = {a = 1, b = 2, c = 3}; for k, v in next, t do print(k, v) end]],
 		[[print("not correct code")]],
-		[[local = 1]], -- Syntax error
-		[[print("unterminated string]], -- Syntax error
-		[[local function foo() return 1 + end]], -- Syntax error
-		[[if true then else end]], -- Syntax error
-		[[local x = function( end]], -- Syntax error
+		[[local = 1]],
+		[[print("unterminated string]],
+		[[local function foo() return 1 + end]],
+		[[if true then else end]],
+		[[local x = function( end]],
 	}
 
 	local random_code_obfuscated = [[local ]] .. Random_Variable.RandomCode1 .. [[ = "]] .. encode_multiple(random_code_snippets[math.random(1, #random_code_snippets)]) .. [["; ]]
