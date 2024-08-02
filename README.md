@@ -12,4 +12,4 @@ obfuscator(
 ```
 # obfuscator update logs
 ```
--- now doesnt show the variable or something if the code errors
+-- now doesnt show the variable or something if the input code errors
