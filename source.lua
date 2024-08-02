@@ -6,7 +6,7 @@
 --// Source
 function obfuscate(source, VarName, WaterMark)
     warn("Started obfuscate")
-    local Variable = VarName or "Taurus_"
+    local Variable = VarName or "Moonsec_V3"
     local WM
 
     if source == nil then
