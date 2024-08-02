@@ -1,3 +1,5 @@
+-- continued version of https://github.com/GhostDuckyy/RBXLuaObfuscator
+
 --[[
     Version: 1.0.7
     Last Update: 02 / 08 / 2024 | Day / Month / Year
